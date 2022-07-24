@@ -11,23 +11,25 @@
 
   <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="home">
       <div class="nav-container">
         <a class="headphone-button" href="/">
           <p class="logo">Headphone</p>
         </a>
         <ul class="menu">
-          <a href="/about">
+          <a href="#about">
             <li>About</li>
-          </a><a href="/items">
+          </a><a href="#items">
             <li>Items</li>
-          </a><a href="/contact">
+          </a><a href="#contact">
             <li>Contact</li>
           </a>
         </ul>
       </div>
     </nav>
-
+    <div class="top">
+      <a href="#home"><button>Home </button></a>
+    </div>
 
     <!-- Main Section -->
     <main>
@@ -39,7 +41,7 @@
         </div>
       </section>
       <!-- About Section -->
-      <section class="about-container">
+      <section class="about-container" id="about">
         <div class="about-children">
           <img class="first-img" src="./images/headphone1.jpg" alt="">
           <div class="second-img">
@@ -85,7 +87,7 @@
           style="position:absolute;top:0;left:0;width:100%;height:100%;" title="headphoneVideo.ts"></iframe></div>
       <script src="https://player.vimeo.com/api/player.js"></script>
       <!-- Items Section -->
-      <section>
+      <section id="items">
         <div class="item-section-container">
           <h1>Products related to this item</h1>
         </div>
@@ -165,7 +167,7 @@
         </div>
       </section>
       <!-- contact section  -->
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
         <h1>Contact</h1>
         <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the
           food to
