@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins&display=swap");
+/* body */
+
+body {
+  background-color: #f5f6fa;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Navbar */
+nav {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
+}
+
+.menu a {
+  color: rgb(31, 30, 30);
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  letter-spacing: 3px;
+  gap: 36px;
+}
+.nav-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container p {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+.headphone-button {
+  text-decoration: none;
+  color: rgba(0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+/* Headphone image */
+.headphone-image img {
+  top: 0;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.8;
+}
+
+.headphone-image h1 {
+  color: #58595d;
+  text-align: start;
+  top: 700px;
+  font-size: 36px;
+}
+/* main */
+main {
+  top: 0%;
+}
+/* About Section */
+.about-container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-children {
+  background-color: #ececef;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.about-children img {
+  width: 300px;
+}
+.about-children .first-img {
+  width: 610px;
+  height: 550px !important;
+}
+
+/* About Section Second Children */
+.about-second-children {
+  padding-top: 42px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about-second {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.about-second-children h1 {
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #58595d;
+}
+.about-second-children li {
+  padding-top: 36px;
+}
+
+.about-second-children li {
+  color: #58595d;
+  width: 90%;
+}
+
+/* Items Section  */
+.item-section-container {
+  padding-top: 10rem;
+}
+.item-section-container h1 {
+  font-size: 42px;
+  color: #58595d;
+  text-align: center;
+  padding-top: 36px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* items Card */
+.item-container {
+  padding-top: 5rem !important;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-card img {
+  width: 100%;
+}
+
+.item-card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border: 1px solid gray;
+}
+
+.item-card p {
+  padding: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #58595d;
+}
+.item-card h1 {
+  text-align: center;
+  color: #313132;
+}
+
+/* Contact Section */
+.section-contact {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-contact h1 {
+  color: #313132;
+  font-size: 48px;
+  font-style: italic;
+  letter-spacing: 8px;
+  padding-top: 56px;
+}
+.section-contact h2 {
+  color: #006a68;
+}
+.input-container {
+  padding-top: 48px;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.input-container input {
+  border: none;
+  background-color: #f5f6fa;
+  border-bottom: 1px solid #58595d;
+  padding-top: 28px;
+  font-family: serif;
+  padding-bottom: 10px;
+  padding-right: 10px;
+
+  font-size: 16px;
+}
+
+/* footer */
+footer p {
+  font-size: 11px;
+  color: #58595d;
+  text-align: center;
+  padding-top: 100px;
+}
+/* Media Query For Responsive Mobile Device */
+@media only screen and (max-width: 640px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .about-children .first-img {
+    width: 100%;
+  }
+  .about-children .second-img {
+    display: none;
+  }
+
+  .about-second-children {
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .about-children {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-contact {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-container .first-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-container .second-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
